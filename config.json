@@ -1,0 +1,21 @@
+{
+    "database": {
+        "host": "localhost",
+        "user": "root",
+        "password": "Nishsam0501",
+        "database_name": "etl_automation_db"
+    },
+    "tables": [
+        {
+            "table_name": "users",
+            "load_type": "full",
+            "output_file": "users_data.csv"
+        },
+        {
+            "table_name": "orders",
+            "load_type": "incremental",
+            "incremental_col": "last_updated",
+            "output_file": "orders_incremental.csv"
+        }
+    ]
+}
