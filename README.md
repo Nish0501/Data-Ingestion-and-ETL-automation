@@ -22,13 +22,16 @@ This project is a robust, metadata-driven ETL pipeline built in Python. It's des
 
 The project is structured for clarity and easy navigation:
 
-── etl_pipeline.py           # The main Python script (the pipeline orchestrator)
-├── config.json               # Metadata file for all configurations
-├── last_run.json             # Stores the timestamp for incremental loads
-├── users_data.csv            # Output file for the users table
-├── orders_incremental.csv    # Output file for the orders table
-├── requirements.txt          # Lists all project dependencies
-└── README.md                 # Project README file
+etl_automation_project/
+├── etl_pipeline.py             # The main Python script (the pipeline orchestrator)
+├── config.json                 # Metadata file for all configurations
+├── last_run.json               # Stores the timestamp for incremental loads
+├── users_data.csv              # Output file for the users table
+├── orders_incremental.csv      # Output file for the orders table
+├── requirements.txt            # Lists all project dependencies
+└── README.md                   # Project README file
+
+
 
 ## 🛠️ How to Run the Pipeline
 
