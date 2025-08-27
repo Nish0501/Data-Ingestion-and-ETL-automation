@@ -21,3 +21,42 @@ This project is a robust, metadata-driven ETL pipeline built in Python. It's des
 ## 📂 Project Structure
 
 The project is structured for clarity and easy navigation:
+etl_automation_project/
+├── etl_pipeline.py           # The main Python script (the pipeline orchestrator)
+├── config.json               # Metadata file for all configurations
+├── last_run.json             # Stores the timestamp for incremental loads
+├── users_data.csv            # Output file for the users table
+├── orders_incremental.csv    # Output file for the orders table
+├── requirements.txt          # Lists all project dependencies
+└── README.md                 # Project README file
+
+## 🛠️ How to Run the Pipeline
+
+Follow these steps to set up and run the project:
+
+1.  **Clone the Repository:**
+    ```bash
+    git clone [https://github.com/Nish0501/Data-Ingestion-and-ETL-automation.git](https://github.com/Nish0501/Data-Ingestion-and-ETL-automation.git)
+    cd Data-Ingestion-and-ETL-automation
+    ```
+
+2.  **Set up the Virtual Environment & Install Dependencies:**
+    ```bash
+    python -m venv venv
+    .\venv\Scripts\activate  # On Windows
+    # source venv/bin/activate  # On macOS/Linux
+    pip install -r requirements.txt
+    ```
+
+3.  **Configure the Pipeline:**
+    - Open `config.json` and replace the placeholder values with your MySQL credentials and database name.
+
+4.  **Run the Pipeline:**
+    ```bash
+    python etl_pipeline.py
+    ```
+
+The pipeline will execute, and the output CSV files will be generated in the project directory.
+
+---
+**Author:** [Nishtha Gupta](https://www.linkedin.com/in/nishthagupta0501)
