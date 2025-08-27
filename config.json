@@ -1,8 +1,8 @@
 {
     "database": {
         "host": "localhost",
-        "user": "database_name",
-        "password": "your_database_password",
+        "user": "your_name",
+        "password": "your_actual_password",
         "database_name": "etl_automation_db"
     },
     "tables": [
